@@ -1,52 +1,53 @@
 # Getting Started
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Follow these steps to get the project running locally on your machine.
 
 ## Prerequisites
 
-!!! note "Requirements"
-    - Python 3.8 or higher
-    - pip package manager
-    - A GitHub account
+You will need the following installed before you begin:
+
+- **Python 3.8+**
+- **pip** (comes with Python)
+- **Git**
 
 ## Installation
 
-=== "pip"
-
-    ```bash
-    pip install mkdocs-material
-    ```
-
-=== "venv (recommended)"
-
-    ```bash
-    python3 -m venv .venv
-    source .venv/bin/activate
-    pip install mkdocs-material
-    ```
-
-## Create a new project
+Clone the repository and create a virtual environment:
 
 ```bash
-mkdocs new my-project
-cd my-project
+git clone https://github.com/MathiasDevelopes/mkdocs-oppgave.git
+cd mkdocs-oppgave
+python3 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
 ## Serve locally
 
 ```bash
-mkdocs serve
+.venv/bin/mkdocs serve
 ```
 
-Your site is now live at `http://localhost:8000`. Changes to any file are reflected instantly in the browser.
+Open `http://localhost:8000` in your browser. The site reloads automatically whenever you save a file.
 
-## Next steps
+## Build
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+To generate the static site into the `site/` folder:
 
-1. Edit `mkdocs.yml` to configure your site
-2. Add Markdown pages inside `docs/`
-3. Push to GitHub — the workflow deploys automatically
+```bash
+.venv/bin/mkdocs build
+```
 
-!!! warning "Before deploying"
-    Make sure GitHub Pages is enabled in your repository settings, and the source branch is set to `gh-pages`.
+> [!WARNING] Don't commit `site/`
+> The `site/` directory is git-ignored. GitHub Actions handles building and deploying automatically.
+
+## Deploy manually
+
+If you want to push to GitHub Pages without waiting for the Actions workflow:
+
+```bash
+.venv/bin/mkdocs gh-deploy --force
+```
+
+> [!INFO] First-time setup
+> Make sure GitHub Pages is enabled in your **repository settings** and the source branch is set to `gh-pages`.

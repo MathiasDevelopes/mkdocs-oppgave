@@ -1,36 +1,65 @@
 # Guide Overview
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+This page demonstrates the key formatting features available in this docs setup.
 
-## Configuration
+## Callouts
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+This site uses [`mkdocs-callouts`](https://github.com/sondregronas/mkdocs-callouts) which lets you write callouts in **Obsidian syntax** and have them render as styled admonitions.
 
-```yaml title="mkdocs.yml"
-site_name: My Docs
-theme:
-  name: material
-  palette:
-    scheme: slate
-    primary: indigo
+**Syntax:**
+
+```markdown
+> [!NOTE] Optional title
+> Your content here.
 ```
 
-## Navigation
+**All supported types:**
 
-!!! info "Navigation tabs"
-    Enable `navigation.tabs` in your theme features to show top-level sections as tabs in the header.
+> [!NOTE] Note
+> Use this for general information that is worth highlighting.
 
-Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+> [!TIP] Tip
+> A helpful suggestion that makes things easier.
 
-## Admonitions
+> [!WARNING] Warning
+> Something the reader should be careful about.
 
-Material supports several built-in callout types:
+> [!DANGER] Danger
+> A critical issue that could cause data loss or breakage.
 
-!!! success "Success"
-    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+> [!INFO] Info
+> Background context or neutral supplementary information.
 
-!!! danger "Danger"
-    Nulla quis lorem ut libero malesuada feugiat.
+> [!SUCCESS] Success
+> Confirmation that something worked or a recommended approach.
 
-!!! example "Example"
-    Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
+**Foldable callouts** — add `-` to collapse by default, `+` to expand:
+
+> [!INFO]- Click to expand
+> This callout is **collapsed by default**. The reader can open it manually.
+
+---
+
+## Text formatting
+
+You can use standard Markdown formatting throughout:
+
+- **Bold text** for emphasis
+- *Italic* for lighter emphasis
+- `inline code` for commands or values
+- ~~Strikethrough~~ for deprecated content
+- ==Highlighted== text (requires `pymdownx.mark`)
+
+A **well-structured paragraph** breaks ideas into short, scannable chunks. Keep sentences direct. Avoid padding.
+
+---
+
+## Images
+
+Images go in `docs/assets/` and are referenced with a relative path:
+
+```markdown
+![Alt text](../assets/example.svg)
+```
+
+![Example image](../assets/example.svg)

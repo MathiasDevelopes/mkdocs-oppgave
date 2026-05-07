@@ -45,8 +45,13 @@ nav:
       - Advanced Topics: guide/advanced.md
   - About: about.md
 
+plugins:
+  - search
+  - callouts
+
 markdown_extensions:
   - admonition
+  - nl2br
   - attr_list
   - md_in_html
   - tables

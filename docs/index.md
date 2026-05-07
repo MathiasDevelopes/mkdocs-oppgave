@@ -1,28 +1,31 @@
-# Welcome
+# Welcome to the Docs
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+This is a sample documentation site built with **MkDocs Material**. It demonstrates a range of formatting features including callouts, code blocks, tables, and images.
 
-## Overview
+Use the navigation above to explore the different sections, or jump straight to [Getting Started](getting-started.md) if you're new here.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+---
 
-!!! tip "Getting started"
-    Check out the [Getting Started](getting-started.md) guide to set up your environment quickly.
+## What's included
 
-## Features
+- **Material theme** with dark/light mode toggle
+- **Full-text search** with highlighting
+- **Callouts** using Obsidian-style syntax via `mkdocs-callouts`
+- **Code blocks** with syntax highlighting and a copy button
+- **Responsive layout** that works on mobile
 
-| Feature         | Description                                      |
-|-----------------|--------------------------------------------------|
-| Fast setup      | Up and running in minutes                        |
-| Material theme  | Clean, responsive design out of the box          |
-| Auto-deploy     | GitHub Actions pushes to Pages on every commit   |
-| Dark mode       | Toggle between light and dark with one click     |
+## Example image
 
-## Quick Example
+![Example placeholder](assets/example.svg)
 
-```python
-def greet(name: str) -> str:
-    return f"Hello, {name}!"
+## Feature overview
 
-print(greet("World"))
-```
+| Feature         | Status  | Notes                            |
+|-----------------|---------|----------------------------------|
+| Dark mode       | ✅ Done  | Toggle in the top-right corner   |
+| Search          | ✅ Done  | Instant, full-text               |
+| Callouts        | ✅ Done  | Obsidian syntax supported        |
+| Auto-deploy     | ✅ Done  | GitHub Actions on every push     |
+
+> [!TIP] Tip
+> You can toggle between **light** and **dark** mode using the icon in the header.
