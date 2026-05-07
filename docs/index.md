@@ -1,31 +1,35 @@
-# Welcome to the Docs
+# Slime Dungeon
 
-This is a sample documentation site built with **MkDocs Material**. It demonstrates a range of formatting features including callouts, code blocks, tables, and images.
+> **A fast-paced dungeon crawler where you battle hundreds of slimy enemies, collect cursed gear, and try not to die on floor 2.**
 
-Use the navigation above to explore the different sections, or jump straight to [Getting Started](getting-started.md) if you're new here.
+[Get Started](getting-started.md){ .md-button .md-button--primary }
+[View Characters](guide/overview.md){ .md-button }
 
 ---
 
-## What's included
+![Floor 3 — The Slime Caverns](assets/example.svg)
 
-- **Material theme** with dark/light mode toggle
-- **Full-text search** with highlighting
-- **Callouts** using Obsidian-style syntax via `mkdocs-callouts`
-- **Code blocks** with syntax highlighting and a copy button
-- **Responsive layout** that works on mobile
+---
 
-## Example image
+## What is Slime Dungeon?
 
-![Example placeholder](assets/example.svg)
+Slime Dungeon is a **roguelike dungeon crawler** with procedurally generated levels, a cast of four very different characters, and an overwhelming slime problem. Each run is different. Most runs end badly. That's fine.
 
-## Feature overview
+- 4 playable characters with unique abilities
+- 10 floors of increasingly angry slimes
+- Local co-op for up to 4 players
+- Full permadeath (no saves, no mercy)
+- Unlockable curses that make the game harder for fun
 
-| Feature         | Status  | Notes                            |
-|-----------------|---------|----------------------------------|
-| Dark mode       | ✅ Done  | Toggle in the top-right corner   |
-| Search          | ✅ Done  | Instant, full-text               |
-| Callouts        | ✅ Done  | Obsidian syntax supported        |
-| Auto-deploy     | ✅ Done  | GitHub Actions on every push     |
+## At a glance
 
-> [!TIP] Tip
-> You can toggle between **light** and **dark** mode using the icon in the header.
+| Detail      | Info                        |
+|-------------|-----------------------------|
+| Genre       | Roguelike dungeon crawler   |
+| Players     | 1–4 local co-op             |
+| Platforms   | PC, Mac, Linux              |
+| Difficulty  | Medium → Brutal             |
+| Slime count | Way too many                |
+
+> [!TIP] First time?
+> Start with the **Knight**. Slow, tanky, forgiving. Save the Rogue for when you know what you're doing.

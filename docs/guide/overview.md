@@ -1,65 +1,74 @@
-# Guide Overview
+# Characters
 
-This page demonstrates the key formatting features available in this docs setup.
-
-## Callouts
-
-This site uses [`mkdocs-callouts`](https://github.com/sondregronas/mkdocs-callouts) which lets you write callouts in **Obsidian syntax** and have them render as styled admonitions.
-
-**Syntax:**
-
-```markdown
-> [!NOTE] Optional title
-> Your content here.
-```
-
-**All supported types:**
-
-> [!NOTE] Note
-> Use this for general information that is worth highlighting.
-
-> [!TIP] Tip
-> A helpful suggestion that makes things easier.
-
-> [!WARNING] Warning
-> Something the reader should be careful about.
-
-> [!DANGER] Danger
-> A critical issue that could cause data loss or breakage.
-
-> [!INFO] Info
-> Background context or neutral supplementary information.
-
-> [!SUCCESS] Success
-> Confirmation that something worked or a recommended approach.
-
-**Foldable callouts** — add `-` to collapse by default, `+` to expand:
-
-> [!INFO]- Click to expand
-> This callout is **collapsed by default**. The reader can open it manually.
+Slime Dungeon has **four playable characters**. Each has different stats, a unique special ability, and a completely different feel. Pick whoever matches your playstyle — or whoever you suffer least with.
 
 ---
 
-## Text formatting
+## Stats overview
 
-You can use standard Markdown formatting throughout:
-
-- **Bold text** for emphasis
-- *Italic* for lighter emphasis
-- `inline code` for commands or values
-- ~~Strikethrough~~ for deprecated content
-- ==Highlighted== text (requires `pymdownx.mark`)
-
-A **well-structured paragraph** breaks ideas into short, scannable chunks. Keep sentences direct. Avoid padding.
+| Character  | :heart: HP | :dash: Speed | :crossed_swords: Attack | Special      |
+|------------|-----------|--------------|------------------------|--------------|
+| **Knight** | ●●●●●●●●  | ●●●●○○○○     | ●●●●●●○○               | Shield Bash  |
+| **Rogue**  | ●●●●●○○○  | ●●●●●●●●     | ●●●●○○○○               | Backstab     |
+| **Wizard** | ●●●●○○○○  | ●●●●●●○○     | ●●●●●●●●               | Fireball     |
+| **Bard**   | ●●●●●●○○  | ●●●●●●○○     | ●●●○○○○○               | Rally Cry    |
 
 ---
 
-## Images
+## Character details
 
-Images go in `docs/assets/` and are referenced with a relative path:
+=== "Knight"
 
-```markdown
-![Alt text](../assets/example.svg)
-```
+    **Role:** Tank / Front-line brawler
 
-![Example image](../assets/example.svg)
+    The Knight is slow, sturdy, and satisfying to play. **Shield Bash** stuns nearby enemies for 1.5 seconds — great for interrupting boss attacks and getting out of bad situations.
+
+    Best passive items: *Iron Skin*, *Thorns Amulet*, *Bloodstone*
+
+    > [!TIP] Beginner pick
+    > The Knight is the most **forgiving character** in the game. If you're new, start here.
+
+=== "Rogue"
+
+    **Role:** Burst damage / Glass cannon
+
+    The Rogue is blindingly fast and deals massive damage when attacking from behind with **Backstab** (2× multiplier). Dies in three hits.
+
+    Best passive items: *Shadow Cloak*, *Lucky Coin*, *Poison Blade*
+
+    > [!WARNING] Don't get surrounded
+    > If three or more slimes pin you against a wall, you're dead before you can dodge. Always keep an escape route open.
+
+=== "Wizard"
+
+    **Role:** Area damage / Crowd control
+
+    **Fireball** hits everything on screen. Devastating against groups, overkill against single targets. Limited mobility means positioning is everything.
+
+    Best passive items: *Mana Crystal*, *Spell Echo*, *Glass Orb*
+
+    > [!DANGER] Glass cannon
+    > The Wizard has the **lowest HP** in the game. One bad floor can end a great run instantly.
+
+=== "Bard"
+
+    **Role:** Support / Buffer
+
+    **Rally Cry** boosts all nearby allies' speed and attack damage by 30% for 5 seconds. Incredible in co-op. Mediocre alone. Unlocks the "Emotional Support" achievement if you clear floor 10 solo.
+
+    > [!INFO] Bard solo runs
+    > Bard solo is a self-imposed challenge. There are achievements for it. You will suffer, but you will also feel very cool.
+
+---
+
+## Unlockable characters
+
+Two additional characters are unlocked by completing specific achievements:
+
+| Character      | Unlock condition                    |
+|----------------|-------------------------------------|
+| **Necromancer** | Reach floor 8 with the Wizard       |
+| **Berserker**   | Die 20 times total (any character)  |
+
+> [!NOTE]
+> Unlockable characters are **harder** than the base four. Don't chase them on your first day.

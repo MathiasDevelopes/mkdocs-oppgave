@@ -1,53 +1,56 @@
 # Getting Started
 
-Follow these steps to get the project running locally on your machine.
-
-## Prerequisites
-
-You will need the following installed before you begin:
-
-- **Python 3.8+**
-- **pip** (comes with Python)
-- **Git**
-
 ## Installation
 
-Clone the repository and create a virtual environment:
+Download the zip from the releases page, extract it, and run the executable. No installer needed.
 
 ```bash
-git clone https://github.com/MathiasDevelopes/mkdocs-oppgave.git
-cd mkdocs-oppgave
-python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+# Linux / Mac — run from terminal
+chmod +x slimedungeon
+./slimedungeon
+
+# Or just double-click the .exe on Windows like a normal person
 ```
 
-## Serve locally
+> [!INFO] System requirements
+> Basically any machine from the last 10 years will run this. It's pixel art.
 
-```bash
-.venv/bin/mkdocs serve
-```
+---
 
-Open `http://localhost:8000` in your browser. The site reloads automatically whenever you save a file.
+## Controls
 
-## Build
+| Action       | Keyboard          | Controller        |
+|--------------|-------------------|-------------------|
+| Move         | `WASD` / Arrows   | Left stick        |
+| Attack       | `Space`           | :fontawesome-brands-xbox: A |
+| Dodge roll   | `Shift`           | :fontawesome-brands-xbox: B |
+| Use item     | `E`               | :fontawesome-brands-xbox: Y |
+| Pause / menu | `Esc`             | Start             |
 
-To generate the static site into the `site/` folder:
+> [!WARNING] Controller support
+> Xbox and PlayStation controllers work out of the box. **Generic USB controllers may not be detected** — use keyboard if yours isn't recognised.
 
-```bash
-.venv/bin/mkdocs build
-```
+---
 
-> [!WARNING] Don't commit `site/`
-> The `site/` directory is git-ignored. GitHub Actions handles building and deploying automatically.
+## Your first run
 
-## Deploy manually
+1. **Pick a character** — see the [Characters page](guide/overview.md) for a full breakdown.
+2. **Floor 1 is always the same** — learn the layout before experimenting with builds.
+3. **Pick up everything** — even bad items can be sold to the shop on floor 3.
+4. **Don't stand in slime puddles.** They deal damage every tick. Yes, even the small ones.
 
-If you want to push to GitHub Pages without waiting for the Actions workflow:
+> [!DANGER] Permadeath is real
+> There are no saves and no checkpoints. When you die, the run ends. Your gold, gear, and progress are gone. **This is intentional.** Embrace it.
 
-```bash
-.venv/bin/mkdocs gh-deploy --force
-```
+---
 
-> [!INFO] First-time setup
-> Make sure GitHub Pages is enabled in your **repository settings** and the source branch is set to `gh-pages`.
+## The shop
+
+The shop appears at the end of every third floor. You can:
+
+- Buy health potions (**40g** each, carry up to 3)
+- Reroll your passive item once per visit (**25g**)
+- Unlock a **curse** for bonus gold drops (not recommended on your first run)
+
+> [!NOTE] Saving gold
+> Don't blow all your gold on potions. A strong passive item from the shop often wins more runs than full HP.

@@ -1,34 +1,40 @@
 # About
 
-This documentation site was created as a **school assignment** to explore and demonstrate [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) — a powerful documentation framework built on top of MkDocs.
+**Slime Dungeon** was developed by a two-person team over the course of one very long weekend. It started as a game jam entry, somehow won third place, and then spiralled into a real project.
 
-## Goals
+---
 
-The assignment covers:
+## The team
 
-1. Setting up a local MkDocs Material project
-2. Customising the theme (colours, fonts, navigation)
-3. Writing structured documentation in Markdown
-4. Automating deployment to GitHub Pages via GitHub Actions
+| Name          | Role                              |
+|---------------|-----------------------------------|
+| **Mathias**   | Programming, level design         |
+| **Teodor**    | Pixel art, sound design, vibes    |
 
-## Tech stack
+---
 
-| Tool              | Role                                    |
-|-------------------|-----------------------------------------|
-| MkDocs            | Static site generator                   |
-| MkDocs Material   | Theme and UI components                 |
-| mkdocs-callouts   | Obsidian-style callout syntax           |
-| GitHub Actions    | CI/CD — deploys on every push to `main` |
-| GitHub Pages      | Free static hosting                     |
+## Frequently asked questions
 
-## Deployment pipeline
+**Why is there no save system?**
+Permadeath is a core design choice. Saves would undermine the tension that makes each run feel meaningful. Also we didn't have time to implement it during the jam.
 
-Every push to the `main` branch triggers the workflow in `.github/workflows/deploy.yml`. It:
+**Will you add more characters?**
+The Necromancer and Berserker are already in. Possibly a Paladin at some point. No promises.
 
-1. Installs `mkdocs-material` and dependencies
-2. Runs `mkdocs gh-deploy --force`
-3. Force-pushes the built `site/` output to the `gh-pages` branch
-4. GitHub Pages serves that branch at the public URL
+**The Bard feels weak.**
+The Bard *is* weak in solo. That's intentional. Play co-op or accept the challenge.
 
-> [!SUCCESS] Live site
-> **[MathiasDevelopes.github.io/mkdocs-oppgave](https://MathiasDevelopes.github.io/mkdocs-oppgave/)**
+**I found a bug.**
+Open an issue on GitHub. Include your floor number, character, and what passive items you had.
+
+---
+
+## Built with
+
+- [Godot Engine 4](https://godotengine.org/) — game engine
+- [Aseprite](https://www.aseprite.org/) — pixel art
+- [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) — this docs site
+- [mkdocs-callouts](https://github.com/sondregronas/mkdocs-callouts) — Obsidian-style callout syntax
+
+> [!SUCCESS] Thanks for playing
+> If Slime Dungeon ate three hours of your evening, mission accomplished.

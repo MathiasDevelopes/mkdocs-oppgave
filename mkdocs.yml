@@ -41,8 +41,8 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Guide:
-      - Overview: guide/overview.md
-      - Advanced Topics: guide/advanced.md
+      - Characters: guide/overview.md
+      - Enemies & Bosses: guide/advanced.md
   - About: about.md
 
 plugins:
